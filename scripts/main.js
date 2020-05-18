@@ -6,7 +6,7 @@
 document.querySelector('#search-button').addEventListener('click', function() {
 	// alert('the button was clicked');
 	fetch('https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json').then(function(results) {
-		results.json()
+		return results.json()
 	}).then(function(data) {
 		console.log('data');
 		console.log(data);
