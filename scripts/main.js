@@ -15,7 +15,7 @@ document.querySelector('#search-button').addEventListener('click', function () {
 
 		cars.forEach(function(item, iteration) {
 						// console.log(item.Make_Name)
-						console.log(`The car on iteration ${item.iteration} is ${item.Make_Name}`);
+						console.log(`The car on iteration ${iteration} is ${item.Make_Name}`);
 		});
 	})
 
