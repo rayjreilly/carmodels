@@ -13,9 +13,12 @@ document.querySelector('#search-button').addEventListener('click', function () {
 
 		var cars = data.Results;
 
-		cars.forEach(function(item, iteration) {
-						// console.log(item.Make_Name)
-						console.log(`The car on iteration ${iteration} is ${item.Make_Name}`);
+		cars.forEach(function (item, iteration) {
+			// console.log(`The car on iteration ${iteration} is ${item.Make_Name}`);
+
+            var newCar = document.createElement('li');
+            newCar.textContent = item.Make_Name;
+            carsContainer.appendChild(newCar);
 		});
 	})
 
